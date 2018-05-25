@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset='UTF-8'>
+    <link href="static/css/styles.css" rel="stylesheet">
+    <link href="static/css/variables.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>{% block title %}Главная{% endblock %}</title>
+</head>
+<body>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+<div class="container-fluid">
+	<div class="row-row">
+		<div class="col-md-6 col-md-offset-2">
+            <h3>GRACIA:</h3>
+            <h4>студия интерьерных решений</h4>
+        </div>
+        <div class="col-md-2">
+			<h3>89377908787</h3>
+        <div class="social">
+            <a href="https://vk.com/public166188090"><i class="fa fa-vk"></i></a>
+		</div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="col-md-offset-2">
+        <ul class="nav nav-pills">
+            {% block menu1 %}
+            <li class="active"><a href="/">Главная</a></li>
+            {% endblock %}
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                Услуги
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="/mebel">Мебель</a></li>
+                <li><a tabindex="-1" href="/potolki">Потолки</a></li>
+                <li><a tabindex="-1" href="/okna">Пластиковые окна</a></li>
+            </ul>
+            </li>
+            {% block menu3 %}
+            <li><a href="/contacts">Контакты</a></li>
+            {% endblock %}
+        </ul>
+    </div>
+    </nav>
+{% block content %}
+
+{% endblock %}
+<footer>
+<div class="navbar-fixed-bottom row-fluid">
+	<div class="footer">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-2">
+            Разработка сайта: Раис Хабибулин
+		</div>
+        <div class="col-md-2">
+            2018
+        </div>
+        </div>
+	</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
@@ -20,10 +20,6 @@ def potolki():
 @app.route('/contacts')
 def contacts():
     return render_template('contacts.html')
-
-@app.route('/contacts/')
-def contacts_redirect():
-    return redirect('/contacts')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000)

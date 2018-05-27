@@ -6102,6 +6102,12 @@ a:focus {
   width: 100%;
   margin-bottom: 10px;
 }
+#content a {
+  color: #000000;
+}
+#content .btn-group {
+  padding: 0 0 10px 20px;
+}
 @media (min-width: 200px) {
   #content .img-thumbnail {
     height: 90px;

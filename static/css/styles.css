@@ -5904,6 +5904,9 @@ figure img {
 .social a:hover {
   color: black;
 }
+.social a:focus {
+  color: black;
+}
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
@@ -6062,4 +6065,25 @@ a:focus {
 .open .dropdown-toggle {
   background: #545449 !important;
   color: #ffffff !important;
+}
+#heading {
+  margin: 10px 10px 10px 20px;
+  margin-bottom: -15px;
+  color: black;
+}
+#content {
+  border-radius: 0px;
+  background-color: #f8f8f8;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black transparent transparent transparent;
+  width: 100%;
+  min-height: 300px;
+  margin-top: 20px;
+}
+#content > p {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+  text-indent: 10px;
+  color: black;
 }

@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from website import picture_row
 app = Flask(__name__)
 
 @app.route('/')
@@ -15,7 +16,8 @@ def okna():
 
 @app.route('/potolki')
 def potolki():
-    return render_template('potolki.html')
+    pic_code = picture_row('potolki')
+    return render_template('potolki.html', pic_code=pic_code)
 
 @app.route('/contacts')
 def contacts():

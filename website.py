@@ -12,7 +12,7 @@ def picture_row(page_name, page_num):
             page_counter += 1
             page_image_counter = 0
             pic_code[str(page_counter)] = ''
-        pic_code[str(page_counter)] = pic_code[str(page_counter)] + ' ' + '<div class="col-md-4 col-xs-4 col-sm-4"><img src="/static/images/'+str(page_name)+'/' + str(image_counter) + '.JPG" class="img-thumbnail"></a></div>'
+        pic_code[str(page_counter)] = pic_code[str(page_counter)] + ' ' + '<a href="/static/images/'+str(page_name)+'/' + str(image_counter) + '.JPG" data-fancybox="images" class="col-md-4 col-xs-4 col-sm-4"><img src="/static/images/'+str(page_name)+'/' + str(image_counter) + '.JPG" class="img-thumbnail"></a>'
 
         try:
             open('static/images/'+str(page_name)+'/' + str(image_counter + 1) + '.JPG')

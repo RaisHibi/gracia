@@ -6147,13 +6147,10 @@ a:focus {
 #content .social a:focus {
   color: black;
 }
-#content a {
-  color: #000000;
-}
-#content a:hover {
-  color: blue;
-}
-#content a:link {
+#content a,
+#content a:hover,
+#content a:link,
+#content a:focus {
   color: blue;
 }
 #content .contact {

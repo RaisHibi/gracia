@@ -5913,6 +5913,11 @@ figure img {
   color: #FFFFFF;
   background-color: #000000;
 }
+@media (max-width: 767px) {
+  h4 {
+    font-size: 20px;
+  }
+}
 @media (min-width: 768px) {
   .h3-head {
     font-size: 14px;
@@ -6067,7 +6072,7 @@ a:focus {
   color: #ffffff !important;
 }
 #heading {
-  margin: 10px 10px 10px 20px;
+  margin: 10px 10px 10px 42px;
   margin-bottom: -15px;
   color: black;
 }
@@ -6080,12 +6085,22 @@ a:focus {
   width: 100%;
   min-height: 300px;
   margin-top: 20px;
-}
-#content > p {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-  text-indent: 10px;
   color: black;
+  font-size: 16px;
+}
+#content ul {
+  padding: 2px 0px 5px 40px;
+}
+#content ul li {
+  padding: 0px 5px 3px 5px;
+}
+#content p {
+  text-indent: 20px;
+  margin: 10px 20px -5px 20px;
+  text-align: justify;
+}
+#content p:last-of-type {
+  margin: 10px 20px 10px 20px;
 }
 #content > div {
   background-color: #f8f8f8;
@@ -6102,8 +6117,60 @@ a:focus {
   width: 100%;
   margin-bottom: 10px;
 }
+#content ol {
+  padding: 10px 0 0px 70px;
+  margin-bottom: -10px;
+  list-style-type: none;
+  /* Убираем исходные маркеры */
+  counter-reset: item;
+  /* Обнуляем счетчик списка */
+}
+#content ol lim:before {
+  content: counter(item) ') ';
+  /* Добавляем к числам скобку */
+  counter-increment: item;
+  /* Задаём имя счетчика */
+}
+#content ol p {
+  margin-top: -2px !important;
+  margin-bottom: 1px !important;
+  margin-left: -30px !important;
+}
+#content .social a {
+  color: blue;
+  font-size: 40px;
+  transition: all .5s ease;
+}
+#content .social a:hover {
+  color: black;
+}
+#content .social a:focus {
+  color: black;
+}
 #content a {
   color: #000000;
+}
+#content a:hover {
+  color: blue;
+}
+#content a:link {
+  color: blue;
+}
+#content .contact {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 10px;
+  color: black;
+  border-color: black;
+  border-style: solid;
+  background: transparent;
+  text-align: center;
+  margin: 10px 20px 10px 0px;
+}
+#content .contact p {
+  text-indent: 0;
+  margin: 0 0 0 0;
+  text-align: center;
 }
 #content .btn-group {
   padding: 0 0 10px 20px;

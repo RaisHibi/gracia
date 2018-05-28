@@ -85,7 +85,11 @@ color: black;
   background-color: #000000;
 }
 
-
+@media (max-width: 767px) {
+h4 {
+  font-size: 20px;
+  }
+}
 @media (min-width: 768px) {
 .h3-head {
   font-size: 14px;
@@ -257,7 +261,7 @@ color:#ffffff !important;
 
 
 #heading {
-  margin: 10px 10px 10px 20px;
+  margin: 10px 10px 10px 42px;
   margin-bottom: -15px;
   color: black;
 }
@@ -270,12 +274,22 @@ color:#ffffff !important;
   width: 100%;
   min-height: 300px;
   margin-top: 20px;
-}
-#content >p {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-  text-indent: 10px;
   color: black;
+  font-size: 16px;
+  ul {
+  padding: 2px 0px 5px 40px;
+  li {
+  padding: 0px 5px 3px 5px;
+  }
+  }
+}
+#content p {
+  text-indent: 20px;
+  margin: 10px 20px -5px 20px;
+  text-align: justify;
+}
+#content p:last-of-type {
+  margin: 10px 20px 10px 20px;
 }
 #content >div {
   background-color: #f8f8f8;
@@ -294,11 +308,63 @@ color:#ffffff !important;
   margin-bottom: 10px;
 }
 
+#content  {
+ol {
+    padding: 10px 0 0px 70px;
+    margin-bottom: -10px;
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset:  item; /* Обнуляем счетчик списка */
+    lim:before {
+    content: counter(item) ') '; /* Добавляем к числам скобку */
+    counter-increment: item; /* Задаём имя счетчика */
+    }
+    p {
+    margin-top: -2px !important;
+    margin-bottom: 1px !important;
+    margin-left: -30px !important;
+    }
+}
+}
+
+#content {
+.social a {
+  color: blue;
+  font-size: 40px;
+  transition: all .5s ease;
+}
+.social a:hover {
+  color: black;
+}
+.social a:focus{
+color: black;
+}
+}
 
 #content a {
   color: #000000;
 }
-
+#content a:hover {
+  color: blue;
+}
+#content a:link {
+  color: blue;
+}
+#content .contact {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 10px;
+  color: black;
+  border-color: black;
+  border-style: solid;
+background: transparent;
+text-align: center;
+margin: 10px 20px 10px 0px;
+p {
+text-indent: 0;
+margin: 0 0 0 0;
+text-align: center;
+}
+}
 #content .btn-group {
   padding: 0 0 10px 20px;
 }

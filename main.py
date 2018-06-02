@@ -6,9 +6,14 @@ app = Flask(__name__)
 def hello_world():
     return render_template('main.html')
 
+@app.route('/mebel/<page_num>')
+def mebel(page_num):
+    pic_code = picture_row('mebel', page_num)
+    return render_template('mebel.html', pic_code=pic_code)
+
 @app.route('/mebel')
-def mebel():
-    return render_template('mebel.html')
+def mebel_main():
+    return redirect('/mebel/1')
 
 @app.route('/okna')
 def okna():

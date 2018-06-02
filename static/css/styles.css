@@ -6083,7 +6083,6 @@ a:focus {
   border-width: 3px;
   border-color: black transparent transparent transparent;
   width: 100%;
-  min-height: 300px;
   margin-top: 20px;
   color: black;
   font-size: 16px;
@@ -6104,19 +6103,35 @@ a:focus {
 }
 #content > div {
   background-color: #f8f8f8;
+  width: 100%;
 }
 #content .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
   background-color: #ffffff;
   border: 1px solid #dddddd;
-  border-radius: 0;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   width: 100%;
   margin-bottom: 10px;
 }
+
+
+#content a {
+  background-color: #f8f8f8;
+}
+
+#content .row {
+  background-color: #f8f8f8;
+  width: 100%;
+  margin-left: 0px;
+}
+
+#content .btn-group {
+  width: 100%;
+  margin-left: 0px;
+}
+
 #content ol {
   padding: 10px 0 0px 70px;
   margin-bottom: -10px;
@@ -6147,10 +6162,7 @@ a:focus {
 #content .social a:focus {
   color: black;
 }
-#content a,
-#content a:hover,
-#content a:link,
-#content a:focus {
+#content a {
   color: blue;
 }
 #content .contact {

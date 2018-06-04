@@ -12,10 +12,10 @@ def picture_row(page_name, page_num):
             page_counter += 1
             page_image_counter = 1
             pic_code[str(page_counter)] = '<div class="row">'
-        pic_code[str(page_counter)] = pic_code[str(page_counter)] + ' ' + '<a href="/static/images/'+str(page_name)+'/' + str(image_counter) + '.JPG" data-fancybox="images" class="col-md-4 col-xs-4 col-sm-4"><img src="/static/images/'+str(page_name)+'/' + str(image_counter) + '.JPG" class="img-thumbnail"></a>'
+        pic_code[str(page_counter)] = pic_code[str(page_counter)] + ' ' + '<a href="/static/images/'+str(page_name)+'/' + str(image_counter) + '.jpg" data-fancybox="images" class="col-md-4 col-xs-4 col-sm-4"><img src="/static/images/'+str(page_name)+'/' + str(image_counter) + '.jpg" class="img-thumbnail"></a>'
 
         try:
-            open('static/images/'+str(page_name)+'/' + str(image_counter + 1) + '.JPG')
+            open('static/images/'+str(page_name)+'/' + str(image_counter + 1) + '.jpg')
         except:
             pic_is = False
     pic_code['num'] = '<div class="btn-group col-xs-12">'

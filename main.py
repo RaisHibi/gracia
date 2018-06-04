@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, url_for
 from website import picture_row
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ def mebel(page_num):
 
 @app.route('/mebel')
 def mebel_main():
-    return redirect('/mebel/1')
+    return redirect(url_for('mebel', page_num=1))
 
 @app.route('/okna')
 def okna():
@@ -26,7 +26,7 @@ def potolki(page_num):
 
 @app.route('/potolki')
 def potolki_main():
-    return redirect('/potolki/1')
+    return redirect(url_for('potolki', page_num=1))
 
 @app.route('/contacts')
 def contacts():

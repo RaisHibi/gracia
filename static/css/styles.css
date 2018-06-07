@@ -6096,7 +6096,7 @@ a:focus {
 #content p {
   text-indent: 20px;
   margin: 10px 20px -5px 20px;
-  text-align: justify;
+  text-align: left;
 }
 #content p:last-of-type {
   margin: 10px 20px 10px 20px;

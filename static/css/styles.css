@@ -6132,6 +6132,9 @@ a:focus {
   margin-left: 0px;
 }
 
+#content .btn {
+  color: black;
+}
 #content ol {
   padding: 10px 0 0px 70px;
   margin-bottom: -10px;

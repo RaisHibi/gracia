@@ -36,7 +36,7 @@
                     <p class="h3-gr">GRACIA</p>
                     <p class="h4-lg">студия интерьерных решений</p>
                 </div>
-                <div class="col-lg-2 col-sm-2 col-md-2 hidden-xs">
+                <div class="col-sm-2 hidden-xs">
                     <p class="h3-head" align="right">89377908787</p>
                     <div class="social" align="right">
                     <a href="https://vk.com/gracianovo"><i class="fa fa-vk"></i></a>
@@ -57,7 +57,7 @@
                  </div>
              </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <div class="col-md-offset-2 col-xs-offset-0 col-sm-offset-2 col-lg-offset-2">
+                <div class="col-xs-offset-0 col-sm-offset-2">
                     <ul class="nav navbar-nav">
                         {% block menu1 %}
                         <li class="active"><a href="/">Главная</a></li>
@@ -116,5 +116,12 @@
         </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+<script>
+jQuery('ul.nav > li').hover(function() {
+jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
+}, function() {
+jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
+})
+</script>
 </body>
 </html>

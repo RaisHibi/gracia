@@ -66,7 +66,48 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Услуги<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="/mebel">Мебель</a></li>
+				<li class="dropdown visible-xs"><a tabindex="-1" href="/mebel">Мебель</a>
+                                <li class="dropdown-submenu hidden-xs"><a tabindex="-1" href="/mebel">Мебель</a>
+					<ul class="dropdown-menu hidden-xs">
+						<li class="dropdown-submenu"><a tabindex="-1" href="#">Корпусная</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu"><a tabindex="-1" href="#">Кухни</a>
+									<ul class="dropdown-menu">
+										<li><a tabindex="-1" href="#">Фасады</a></li>
+										<li><a tabindex="-1" href="#">Угловые кухни</a></li>
+										<li><a tabindex="-1" href="#">Прямые кухни</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu"><a tabindex="-1" href="#">Шкафы</a>
+									<ul class="dropdown-menu">
+										<li><a tabindex="-1" href="#">Шкафы-купе</a></li>
+										<li><a tabindex="-1" href="#">Прихожие</a></li>
+										<li><a tabindex="-1" href="#">Горки</a></li>
+										<li><a tabindex="-1" href="#">Гардеробные</a></li>
+
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu"><a tabindex="-1" href="#">Мягкая</a>
+							<ul class="dropdown-menu">
+								<li><a tabindex="-1" href="#">Прямые диваны</a></li>
+								<li><a tabindex="-1" href="#">Угловые диваны</a></li>
+								<li><a tabindex="-1" href="#">Детские диваны</a></li>
+								<li><a tabindex="-1" href="#">Зоны отдыха</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu"><a tabindex="-1" href="#">Хром-мебель</a>
+							<ul class="dropdown-menu">
+								<li><a tabindex="-1" href="#">Столы</a></li>
+								<li><a tabindex="-1" href="#">Стулья</a></li>
+								<li><a tabindex="-1" href="#">Табуретки</a></li>
+								<li><a tabindex="-1" href="#">Кухонные углы</a></li>
+								<li><a tabindex="-1" href="#">Барные стулья</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
                                 <li><a tabindex="-1" href="/potolki">Натяжные потолки</a></li>
                                 <li><a tabindex="-1" href="/okna">Пластиковые окна</a></li>
                             </ul>
@@ -116,12 +157,5 @@
         </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-<script>
-jQuery('ul.nav > li').hover(function() {
-jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
-}, function() {
-jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
-})
-</script>
 </body>
 </html>

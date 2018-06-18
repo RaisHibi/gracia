@@ -11,22 +11,24 @@ def mebel(page_num):
     pic_code = picture_row('mebel', page_num)
     return render_template('mebel.html', pic_code=pic_code)
 
-@app.route('/mebel')
-def mebel_main():
-    return redirect(url_for('mebel', page_num=1))
+@app.route('/mebel/<section_1>/<section_2>/<section_3>/<page_num>/')
+@app.route('/mebel/<section_1>/<section_2>/<page_num>/', defaults={'section_3': ''})
+@app.route('/mebel/<section_1>/<section_2>/<section_3>/', defaults={'page_num':'1'})
+@app.route('/mebel/<section_1>/<section_2>/', defaults={'page_num':'1', 'section_3': ''})
+def mebel_main(section_1, section_2, section_3, page_num):
+    section=section_1 + ' ' + section_2 + ' ' + section_3
+    pic_code = picture_row('mebel', page_num, section, n=3)
+    return render_template('mebel.html', pic_code=pic_code)
 
 @app.route('/okna')
 def okna():
     return render_template('okna.html')
 
+@app.route('/potolki/', defaults={'page_num':'1'})
 @app.route('/potolki/<page_num>')
 def potolki(page_num):
-    pic_code = picture_row('potolki', page_num)
+    pic_code = picture_row('potolki', page_num, section=None, n=1)
     return render_template('potolki.html', pic_code=pic_code)
-
-@app.route('/potolki')
-def potolki_main():
-    return redirect(url_for('potolki', page_num=1))
 
 @app.route('/contacts')
 def contacts():

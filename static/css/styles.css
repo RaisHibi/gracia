@@ -5910,6 +5910,10 @@ figure img {
   margin-top: 0;
 }
 
+.content .social {
+  margin-bottom: 0
+}
+
 .social a:hover {
   color: black;
 }

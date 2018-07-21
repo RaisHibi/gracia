@@ -1,11 +1,5 @@
 {% extends "main.html" %}
 {% block title %}Контакты{% endblock %}
-            {% block menu1 %}
-            <li><a href="/">Главная</a></li>
-            {% endblock %}
-            {% block menu3 %}
-            <li class="active"><a href="/contacts">Контакты</a></li>
-            {% endblock %}
 <h3>{% block heading %}Контакты{% endblock %}</h3>
 {% block content %}
 <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
@@ -34,8 +28,10 @@
 </div>
 <p>У нас также есть <a href="https://vk.com/gracianovo">сообщество ВКонтакте</a>.</p>
     <p>Вы можете задать все интересующие вас вопросы в комментариях:</p>
-<div class="col-xs-12">
+<div class="container-fluid">
+<div class="row">
 <div id="disqus_thread"></div>
+</div>
 </div>
 <script>
 

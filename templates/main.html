@@ -12,6 +12,7 @@
     проектирование корпусной и мягкой мебели, а также монтажными работами (установка натяжных потолков
     и оконных конструкций, остекление балконов и лоджий и т.д.). Низкие цены, индивидуальный
     подход к клиенту! Звоните по телефону: +7 (937) 790-87-87 (г. Новокуйбышевск).">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
     <link rel="icon" href="/static/images/logotype/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/static/images/logotype/favicon.ico" type="image/x-icon" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,106 +29,158 @@
 <body>
 <div class="wrapper">
     <div class="content">
-        <script src="//code.jquery.com/jquery-latest.js"></script>
+        <script src="/static/js/jquery.js"></script>
+        <script type="text/javascript" src="/static/js/jquery-gracia.js"></script>
         <script src="/static/js/bootstrap.min.js"></script>
         <div class="container-fluid">
-            <div class="row-row">
-                <div class="hidden-xs col-sm-3 col-sm-offset-2">
-		    <img class="logo" src="/static/images/logo-one-line.svg"></img>
-                </div>
-                <div class="col-sm-2 col-sm-offset-3 hidden-xs">
-                    <p class="h3-head" align="right">89377908787</p>
-                    <div class="social" align="right">
-                    <a href="https://vk.com/gracianovo"><i class="fa fa-vk"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="row">
+        <div class="centered">
         <nav class="navbar navbar-default" role="navigation">
              <!—Название сайта и кнопка раскрытия меню для мобильных-->
-             <div class="navbar-header">
+             <div class="navbar-header" style="height: 60px;">
+	    	<div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+		<menu-logo-container>	
+	   	 <a href="/" title="на главную"><img src="/static/images/logo-one-line.svg" style="height: 60px; min-width:130px; max-width: 150px;"></img></a>
+		</menu-logo-container>
+                 </div>
                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                  </button>
-                 <div class="visible-xs col-xs-offset-2">
-                     <a class="navbar-brand" href="/">GRACIA</a>
-                 </div>
              </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <div class="col-xs-offset-0 col-sm-offset-2">
-                    <ul class="nav navbar-nav">
-                        {% block menu1 %}
-                        <li class="active"><a href="/">Главная</a></li>
-                        {% endblock %}
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Услуги<span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-				<li class="dropdown visible-xs"><a tabindex="-1" href="/mebel">Мебель</a>
-                                <li class="dropdown-submenu hidden-xs"><a tabindex="-1" href="/mebel">Мебель</a>
-					<ul class="dropdown-menu hidden-xs">
-						<li class="dropdown-submenu"><a tabindex="-1" href="#">Корпусная</a>
-							<ul class="dropdown-menu">
-								<li class="dropdown-submenu"><a tabindex="-1" href="#">Кухни</a>
-									<ul class="dropdown-menu">
-										<li><a tabindex="-1" href="/mebel/mebel_korp/kuhni/fasadi">Фасады</a></li>
-										<li><a tabindex="-1" href="/mebel/mebel_korp/kuhni/kuhni_uglov">Угловые кухни</a></li>
-										<li><a tabindex="-1" href="/mebel/mebel_korp/kuhni/kuhni_pryamie">Прямые кухни</a></li>
-									</ul>
-								</li>
-								<li class="dropdown-submenu"><a tabindex="-1" href="#">Шкафы</a>
-									<ul class="dropdown-menu">
-										<li><a tabindex="-1" href="/mebel/mebel_korp/shkafi/shkaf-kupe">Шкафы-купе</a></li>
-										<li><a tabindex="-1" href="/mebel/mebel_korp/shkafi/prihozhie">Прихожие</a></li>
-										<li><a tabindex="-1" href="/mebel/mebel_korp/shkafi/gorki">Горки</a></li>
-										<li><a tabindex="-1" href="/mebel/mebel_korp/shkafi/garderobnie">Гардеробные</a></li>
-
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li class="dropdown-submenu"><a tabindex="-1" href="#">Мягкая</a>
-							<ul class="dropdown-menu">
-								<li><a tabindex="-1" href="/mebel/mebel_myagk/divani_pryamie">Прямые диваны</a></li>
-								<li><a tabindex="-1" href="/mebel/mebel_myagk/divani_uglov">Угловые диваны</a></li>
-								<li><a tabindex="-1" href="/mebel/mebel_myagk/divani_uglov_kuhonnie">Угловые кухонные диваны</a></li>
-								<li><a tabindex="-1" href="/mebel/mebel_myagk/divani_detskie">Детские диваны</a></li>
-							</ul>
-						</li>
-						<li class="dropdown-submenu"><a tabindex="-1" href="#">Хром-мебель</a>
-							<ul class="dropdown-menu">
-								<li><a tabindex="-1" href="/mebel/mebel_chrom/stoli">Столы</a></li>
-								<li><a tabindex="-1" href="/mebel/mebel_chrom/stulya">Стулья</a></li>
-								<li><a tabindex="-1" href="/mebel/mebel_chrom/taburetki">Табуретки</a></li>
-								<li><a tabindex="-1" href="/mebel/mebel_chrom/obed_zoni">Обеденные зоны</a></li>
-								<li><a tabindex="-1" href="/mebel/mebel_chrom/stulya_barnie">Барные стулья</a></li>
-							</ul>
-						</li>
-					</ul>
+            <div class="container-fluid">
+		<div class="row"> 
+	    <div class="hidden-xs" style="padding-right: 7px; padding-left: 15px; width: 150px; display: block; float: left;">
+		<menu-logo-container>	
+	    <a href="/" title="на главную"><img src="/static/images/logo-one-line.svg" style="height: 60px; width: 100%;"></img></a>
+		</menu-logo-container>
+	    </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="">
+		<div class="container-fluid">
+                    <ul class="nav navbar-default navbar-nav">
+			<li class="hidden-xs"><a href="/">Главная</a></li>
+			<li class="dropdown drop-together hidden-xs">
+				<a href="" class="dropdown-toggle" data-toggle="dropdown">Услуги<span class="caret"></span></a>
+			</li>
+		                <li class="dropdown visible-xs">
+		                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Кухни<span class="caret"></span>
+		                    </a> 
+		                    <ul class="dropdown-menu">
+						<li><a href="/mebel/mebel_korp/kuhni/kuhni_uglov">Угловые</a></li>
+						<li><a href="/mebel/mebel_korp/kuhni/kuhni_pryamie">Прямые</a></li>
+						<li><a href="/mebel/mebel_korp/kuhni/fasadi">Фасады</a></li>
+		                    </ul>
+		                </li>
+				<li class="dropdown visible-xs">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Шкафы<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/mebel/mebel_korp/shkafi/shkaf-kupe">Шкафы-купе</a></li>
+							<li><a href="/mebel/mebel_korp/shkafi/prihozhie">Прихожие</a></li>
+							<li><a href="/mebel/mebel_korp/shkafi/gorki">Горки</a></li>
+							<li><a href="/mebel/mebel_korp/shkafi/garderobnie">Гардеробные</a></li>
+						</ul>
 				</li>
-                                <li><a tabindex="-1" href="/potolki">Натяжные потолки</a></li>
-                                <li><a tabindex="-1" href="/okna">Пластиковые окна</a></li>
-                            </ul>
-                        </li>
-                        {% block menu3 %}
+				<li class="dropdown visible-xs">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Диваны<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/mebel/mebel_myagk/divani_pryamie">Прямые</a></li>
+							<li><a href="/mebel/mebel_myagk/divani_uglov">Угловые</a></li>
+							<li><a href="/mebel/mebel_myagk/divani_uglov_kuhonnie">Угловые кухонные</a></li>
+							<li><a href="/mebel/mebel_myagk/divani_detskie">Детские</a></li>
+						</ul>
+				</li>
+				<li class="dropdown visible-xs">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Хром-мебель<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/mebel/mebel_chrom/stoli">Столы</a></li>
+							<li><a href="/mebel/mebel_chrom/stulya">Стулья</a></li>
+							<li><a href="/mebel/mebel_chrom/taburetki">Табуретки</a></li>
+							<li><a href="/mebel/mebel_chrom/obed_zoni">Обеденные зоны</a></li>
+							<li><a href="/mebel/mebel_chrom/stulya_barnie">Барные стулья</a></li>	
+						</ul>
+				</li>
+				<li class="visible-xs"><a href="/potolki">Натяжные потолки</a></li>
+				<li class="visible-xs"><a href="/okna">Пластиковые окна</a></li>
                         <li><a href="/contacts">Контакты</a></li>
-                        {% endblock %}
                     </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="col-sm-8 col-sm-offset-2 hidden-xs">
+			<div class="hidden-xs" style="display: block; float: right;">
+	                	<div class="social" align="right">
+        	        		<a href="https://vk.com/gracianovo" title="группа во Вконтакте"><i class="fa fa-vk"></i></a>
+              	        	</div>
+            		</div>
+		</div>
+	</div>
+		
+		</div> 
+	<div class="row">
+	<gr-men id="panel">
+			<div class="panel-left">
+				<li><a>Мебель</a></li>
+				<li><a href="/potolki">Натяжные потолки</a></li>
+				<li><a href="/okna">Пластиковые окна</a></li>
+			</div>
+			<div class="vertical-divider"></div>
+			<div class="panel-right">
+				<p>Выберите услугу слева</p>
+				<ul-block>
+					<ul>
+						<li class="active"><a>Корпусная мебель</a></li>
+							<pair-block>
+								<titles>
+									<li><a>Кухни</a></li>
+									<li><a>Шкафы</a></li>
+								</titles>
+								<div class="pair">
+									<li><a href="/mebel/mebel_korp/kuhni/kuhni_uglov">Угловые</a></li>
+									<li><a href="/mebel/mebel_korp/kuhni/kuhni_pryamie">Прямые</a></li>
+									<li><a href="/mebel/mebel_korp/kuhni/fasadi">Фасады</a></li>
+								</div>
+								<div class="pair">
+									<li><a href="/mebel/mebel_korp/shkafi/shkaf-kupe">Шкафы-купе</a></li>
+									<li><a href="/mebel/mebel_korp/shkafi/prihozhie">Прихожие</a></li>
+									<li><a href="/mebel/mebel_korp/shkafi/gorki">Горки</a></li>
+									<li><a href="/mebel/mebel_korp/shkafi/garderobnie">Гардеробные</a></li>
+								</div>
+
+							</pair-block>					
+					</ul>		
+					<ul>
+						<li class="active"><a>Диваны</a></li>
+						<li><a href="/mebel/mebel_myagk/divani_pryamie">Прямые</a></li>
+						<li><a href="/mebel/mebel_myagk/divani_uglov">Угловые</a></li>
+						<li><a href="/mebel/mebel_myagk/divani_uglov_kuhonnie">Угловые кухонные</a></li>
+						<li><a href="/mebel/mebel_myagk/divani_detskie">Детские</a></li>
+					</ul>
+					<ul>
+						<li class="active"><a>Хром-мебель</a></li>
+							<li><a href="/mebel/mebel_chrom/stoli">Столы</a></li>
+							<li><a href="/mebel/mebel_chrom/stulya">Стулья</a></li>
+							<li><a href="/mebel/mebel_chrom/taburetki">Табуретки</a></li>
+							<li><a href="/mebel/mebel_chrom/obed_zoni">Обеденные зоны</a></li>
+							<li><a href="/mebel/mebel_chrom/stulya_barnie">Барные стулья</a></li>	
+					</ul>
+				</ul-block>
+			</div>
+		</gr-men> 
+	</div>   
+	</nav>
+	
+        </div>
+        </div>
+        </div>
+
+        <div class="centered">
             <figure>
             <img src="/static/images/heading3.jpg">
             </figure>
         </div>
-        <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
+        <div class="centered">
             <div id="heading">
                 <h3>{% block heading %}Главная{% endblock %}</h3>
             </div>
-            <div id="content">
+            <div id="line"></div>		
+            <div id="content" class="centered">
                 {% block content %}
                     <p>Добро пожаловать на страницу компании "GRACIA"!</p>
                     <p>Сферой деятельности нашей компании является проектирование и изготовление 
@@ -147,13 +200,11 @@
         </div>
     </div>
     <div class="push"></div>
+    <div class="centered">
         <div class="footer">
-            <div class="row">
-                <div class="col-xs-offset-2">
-                    2018
-                </div>
-            </div>
+            <p>2018</p>
         </div>
+    </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 </body>

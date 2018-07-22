@@ -1,12 +1,6 @@
 {% extends "main.html" %}
-{% block title %}Мебель{% endblock %}
-            {% block menu1 %}
-            <li><a href="/">Главная</a></li>
-            {% endblock %}
-            {% block menu3 %}
-            <li><a href="/contacts">Контакты</a></li>
-            {% endblock %}
-<h3>{% block heading %}Мебель{% endblock %}</h3>
+{% block title %}{{title}}{% endblock %}
+<h3>{% block heading %}{{title}}{% endblock %}</h3>
 {% block content %}
 <p>
     Неотъемлемой частью полноценной и комфортной жизни человека являются интерьер,

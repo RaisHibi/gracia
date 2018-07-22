@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for
-from website import picture_row
+from website import picture_row, assign_title
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -17,8 +18,13 @@ def mebel(page_num):
 @app.route('/mebel/<section_1>/<section_2>/', defaults={'page_num':'1', 'section_3': ''})
 def mebel_main(section_1, section_2, section_3, page_num):
     section=section_1 + ' ' + section_2 + ' ' + section_3
+    if section_3 == "":
+	way = section_1 + ' ' + section_2
+    else:
+	way = section_1 + ' ' + section_2 + ' ' + section_3
+    title = assign_title(way)
     pic_code = picture_row('mebel', page_num, section, n=3)
-    return render_template('mebel.html', pic_code=pic_code)
+    return render_template('mebel.html', pic_code=pic_code, title=title)
 
 @app.route('/okna')
 def okna():

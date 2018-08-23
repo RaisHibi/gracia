@@ -36,6 +36,11 @@ def potolki(page_num):
     pic_code = picture_row('potolki', page_num, section=None, n=1)
     return render_template('potolki.html', pic_code=pic_code)
 
+@app.route('/production', defaults={'page_num':'1'})
+def production(page_num):
+    pic_code = picture_row('production', page_num, section=None, n=1)
+    return render_template('production.html', pic_code=pic_code)
+
 @app.route('/contacts')
 def contacts():
     return render_template('contacts.html')

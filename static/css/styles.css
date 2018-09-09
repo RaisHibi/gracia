@@ -6707,3 +6707,44 @@ height: 60px;
   border-width: 0;
 }
 }
+
+.price{
+    padding: 20px 20px 0px 20px;
+    min-height: 200px;
+    border-radius: 5px;
+    max-width: 660px;
+    border: 2px solid #fff200; 
+    background:#f9f9f9;
+    font-size: 14px;
+    line-height: 20px;
+}
+.calc_title{
+    line-height: 20px;
+    color: #ee1d25;
+    margin: 0 0 20px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.result{
+    padding: 20px 0 0;
+    margin: 20px 0;
+    font-size: 20px;
+    border-top: 1px solid #e0e0e0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+span.total{
+    color: #ed1d25;
+    font-family: 'Oswald', sans-serif;
+}
+.calculator input[type="text"], select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 10px;
+}

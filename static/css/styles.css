@@ -6707,7 +6707,12 @@ height: 60px;
   border-width: 0;
 }
 }
-
+@media (max-width: 967px) {
+.price, .calc_title, .result, .total, .calculator {
+    display: none;
+}
+}
+@media (min-width: 968px) {
 .price{
     padding: 20px 20px 0px 20px;
     min-height: 200px;
@@ -6747,4 +6752,5 @@ span.total{
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 10px;
+}
 }

@@ -202,11 +202,44 @@
         </div>
         </div>
 
-        <div class="centered">
+  <!--      <div class="centered">
             <figure>
             <img src="/static/images/heading3.jpg">
             </figure>
-        </div>
+        </div> -->
+	<div class="centered">
+	<!-- Bootstrap 3 -->
+{% block top %}
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+	  <!-- Индикаторы -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel" data-slide-to="1"></li>
+	    <li data-target="#carousel" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="item active">
+	      <img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/main/1.jpg" alt="...">
+	    </div>
+	    <div class="item">
+	      <a href="/okna"><img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/main/2.jpg" alt="..."></a>
+	    </div>
+	    <div class="item">
+	      <a href="/potolki"><img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/main/3.jpg" alt="..."></a>
+	    </div>
+	  </div>
+	  <!-- Элементы управления -->
+	  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Предыдущий</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Следующий</span>
+	  </a>
+	</div>
+{% endblock %}
+	</div>
         <div class="centered">
             <div id="heading">
                 <h3>{% block heading %}Главная{% endblock %}</h3>

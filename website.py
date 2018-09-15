@@ -1,4 +1,5 @@
 # coding=utf-8
+import urllib
 def picture_row(page_name, page_num, section, n):
     way = str(page_name) + '/'
     if section != None:

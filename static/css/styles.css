@@ -5879,6 +5879,41 @@ figure img {
   border-radius: 10px;
 }
 
+.carousel {
+  border: 0px solid transparent !important; 
+  border-radius: 10px !important;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* .item {
+  border: 0px solid transparent !important; 
+  border-radius: 0px !important;
+  overflow: hidden;
+} */
+.item img{
+  width: 100%;
+  padding: 0px;
+  line-height: 1.42857143;
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 0px;
+}
+@media (max-width: 767px) {
+ .item img {
+  height: 200px !important;
+} 
+}
+
+@media (min-width: 768px) {
+ .item img {
+  height: 300px !important;
+} 
+}
+.carousel-control {
+  border: 0px solid transparent;
+  border-radius: 10px;
+}
+
 .footer {
   padding:0;
   height: 40px;

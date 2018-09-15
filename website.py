@@ -23,7 +23,7 @@ def picture_row(page_name, page_num, section, n):
             page_counter += 1
             page_image_counter = 1
             pic_code[str(page_counter)] = '<div class="row">'
-        pic_code[str(page_counter)] = pic_code[str(page_counter)] + ' ' + '<a href="' + '/static/images/' + way + str(image_counter) + '.jpg" data-fancybox="images" class="col-md-4 col-xs-4 col-sm-4"><img src="/static/images/'+ way + str(image_counter) + '.jpg" class="img-thumbnail"></a>'
+        pic_code[str(page_counter)] = pic_code[str(page_counter)] + ' ' + '<a href="' + '//s3.us-east-2.amazonaws.com/gracia-novo/static/images/' + way + str(image_counter) + '.jpg" data-fancybox="images" class="col-md-4 col-xs-4 col-sm-4"><img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/'+ way + str(image_counter) + '.jpg" class="img-thumbnail"></a>'
 
         try:
             open('static/images/' + way + str(image_counter + 1) + '.jpg')

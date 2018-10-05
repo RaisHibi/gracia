@@ -227,6 +227,9 @@
 	    <div class="item">
 	      <a href="/potolki"><img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/main/3.jpg" alt="..."></a>
 	    </div>
+	    <div class="item">
+	      <img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/main/4.jpg" alt="...">
+	    </div>
 	  </div>
 	  <!-- Элементы управления -->
 	  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
@@ -241,32 +244,134 @@
 {% endblock %}
 	</div>
         <div class="centered">
-            <div id="heading">
-                <h3>{% block heading %}Главная{% endblock %}</h3>
-            </div>
-            <div id="line"></div>		
             <div id="content" class="centered">
-                {% block content %}
-                    <p>Добро пожаловать на страницу компании "GRACIA"!</p>
-                    <p>Сферой деятельности нашей компании является проектирование и изготовление 
-		    корпусной мебели (кухонных гарнитур, шкафов, гардеробных и т.д.), 
-		    мягкой мебели (угловых, модульных диванов; кресел, кроватей, зон отдыха),
-		    а также монтажные работы: сборка мебели, установка натяжных потолков,
-		    установка оконных конструкций, остекление и отделка балконов и лоджий.
-                    </p>
-                <p>Нашей особенностью является индивидуальный подход к каждому клиенту. В проектировании и
-                    создании мебели участвует и сам заказчик, принимаются во внимание все его пожелания и правки.</p>
-                <p>У нас имеется большой ассортимент образцов используемого материала при изготовлении мебели, натяжных
-                    потолков и оконных конструкций. Все используемые материалы сертифицированы и отвечают требованиям
-                    безопасности здоровья человека. В коллективе работают опытные монтажники. Мы предлагаем
-                    гарантию на продукцию и выполненные работы.</p>
-		<p style="color: black;"><strong>Вы можете воспользоваться <pb style="text-decoration: underline">бесплатным</pb> конструктором кухонь для создания своей идеальной кухни, а затем отправить
-		проект на расчет без посещения офиса. В скором времени Вы получите ответ от нашего специалиста.</strong></p>
-		<p><strong><a style="color:green; text-decoration: underline;" href="/create">Кликните, чтобы попробовать</a></strong></p>
-		<a href="/create"><img src="/static/images/kuhnya_planner.png" style="width:100%; margin-top: 10px;" title="создайте кухню своей мечты"></img></a>
+		        <div id="heading">
+		            <h3>{% block heading %}О нашей компании{% endblock %}</h3>
+		        </div>		
+		            {% block content %}
+		                <p>Добро пожаловать на страницу компании "GRACIA"!</p>
+		                <p>Сферой деятельности нашей компании является проектирование и изготовление 
+					корпусной мебели (кухонных гарнитур, шкафов, гардеробных и т.д.), 
+					мягкой мебели (угловых, модульных диванов; кресел, кроватей, зон отдыха),
+					а также монтажные работы: сборка мебели, установка натяжных потолков,
+					установка оконных конструкций, остекление и отделка балконов и лоджий.
+		                </p>
+		            <p>Нашей особенностью является индивидуальный подход к каждому клиенту. В проектировании мебели участвует и сам заказчик, принимаются во внимание все его пожелания и правки.</p>
+		            <p>У нас имеется большой ассортимент образцов используемого материала при изготовлении мебели, натяжных
+		                потолков и оконных конструкций. Все используемые материалы сертифицированы и отвечают требованиям
+		                безопасности здоровья человека. В коллективе работают опытные монтажники. Мы предлагаем
+		                гарантию на продукцию и выполненные работы.</p>
+<!--					<p style="color: black;"><strong>Вы можете воспользоваться <pb style="text-decoration: underline">бесплатным</pb> конструктором кухонь для создания своей идеальной кухни, а затем отправить
+					проект на расчет без посещения офиса. В скором времени Вы получите ответ от нашего специалиста.</strong></p>
+					<p><strong><a style="color:green; text-decoration: underline;" href="/create">Кликните, чтобы попробовать</a></strong></p>
+					<a href="/create"><img src="/static/images/kuhnya_planner.png" style="width:100%; margin-top: 10px;" title="создайте кухню своей мечты"></img></a>
+-->
+				<div id="heading">
+		            <h3>Почему мы?</h3>
+		        </div>
+				<div class="row" style="text-align: center; margin-bottom: 30px;">
+					<div class="main-pic">
+						<img class="img-circle" src="/static/images/main/guarantee.jpg" width="150px" height="125px"></img>
+						<div><b>Высокое качество</b></div>
+						<div><p>Мы заботимся о наших клиентах и гарантируем лучшее качество.</p></div>
+					</div>
+
+					<div class="main-pic">
+						<img class="img-circle" src="/static/images/main/price.png" width="150px", height="125px"></img>
+						<div><b>Низкая цена</b></div>
+						<div><p>Мы всегда готовы предложить своим клиентам одни из лучших цен.</p></div>
+					</div>
+
+					<div class="main-pic">
+						<img class="img-circle" src="/static/images/main/time.png" width="150px", height="125px"></img>
+						<div><b>Минимальные сроки</b></div>
+						<div><p>Постепенно работаем над увеличением скорости выполнения заказов.</p></div>
+					</div>
+				</div>
+				<div id="heading">
+		            <h3>Наши товары</h3>
+		        </div>
+				<div class="row" style="text-align: center; margin-bottom: 30px;">
+					<a href="/potolki" style="color: black;"><div class="main-pic">
+						<img class="img-circle" src="/static/images/main/potolki.jpg" width="150px", height="125px"></img>
+						<div><b>Потолки</b></div>
+					</div></a>
+
+					<a href="/okna" style="color: black;"><div class="main-pic">
+						<img class="img-circle" src="/static/images/main/okna.jpg" width="150px", height="125px"></img>
+						<div><b>Окна</b></div>
+					</div></a>
+
+					<a href="/korp_meb" style="color: black;"><div class="main-pic">
+						<img class="img-circle" src="/static/images/main/korp_meb.jpg" width="150px", height="125px"></img>
+						<div><b>Корпусная мебель</b></div>
+					</div></a>
+					<a href="/myagk_meb" style="color: black;"><div class="main-pic">
+						<img class="img-circle" src="/static/images/main/m_meb.jpg" width="150px", height="125px"></img>
+						<div><b>Мягкая мебель</b></div>
+					</div></a>
+				</div>
+				<div id="heading">
+				    	<h3>Наши отзывы</h3>
+				</div>
+				<div class="pic-row">
+					<div class="main-pic" style="display: inline-block; width: 150px; vertical-align: middle; margin: 5px;">
+						<img class="img-circle" src="/static/images/main/comment3.png" width="125px" height="125px"></img>
+						<b>Зинаида (г. Новокуйбышевск)</b>
+					</div>
+					<comment-field>Ответственная компания! В срок и качественно выполнили свою работу. Спасибо вам и удачи!
+					Стоимость услуг в целом приемлимая.</comment-field>
+					<div class="main-pic" style="display: inline-block; width: 150px; vertical-align: middle; margin: 5px;">
+						<img class="img-circle" src="/static/images/main/comment2.jpg" width="125px", height="125px"></img>
+						<b>Ольга (г. Чапаевск)</b>
+					</div>
+					<comment-field>Мои знакомые посоветовали мне эту фирму, хвалили и только лестно отзывались. Я тоже оказалась 
+					довольна результатом! Все сделали на высоком уровне.</comment-field>
+
+					<div class="main-pic" style="display: inline-block; width: 150px; vertical-align: middle; margin: 5px;">
+						<img class="img-circle" src="/static/images/main/comment1.png" width="125px", height="125px"></img>
+						<b>Лариса (г. Самара)</b>
+					</div>
+					<comment-field>Не перестаю удивляться профессионализму этой компании. Недавно посоветовала их своей подруге.</comment-field>
+				</div>
+				<div style="position: relative; display: inline-block; width: 100%;">
+					<div class="contacts">
+						<div id="heading" style="width: 100%; margin-left: 0px; ">
+							<h3>Карта</h3>
+						</div>
+						<iframe style="padding: 5px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.245206168256!2d49.95574736383877!3d53.09967561480984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4168a472fd7a2539%3A0x8ed70133a6199de!2sGRACIA!5e1!3m2!1sru!2sru!4v1532276292666" width="100%" height="400px" frameborder="0" style="border:0; margin-bottom: 10px;" allowfullscreen></iframe>
+					</div>
+					<div class="map">
+							<div id="heading">
+								<h3>Контакты</h3>
+							</div>
+							<div style="width: 100%; display: block;">
+							    <div class="contact">
+								    <div style="width: 100%; display: block;">
+									<h4><strong>Хабибулин Марат Равилович</strong></h4>
+									<p>индивидуальный предприниматель</p>
+									    <p>Тел.: 89377908787</p>
+								    </div>
+								    <div style="width: 100%; display: block;">
+									<div class="social">
+									    <a href="https://vk.com/gracia632018"><i class="fa fa-vk"></i></a>
+									</div>
+								    </div>
+							    </div>
+							</div>
+							<p>Офис компании "GRACIA" расположен по адресу:</p>
+							<div style="width: 100%; display: block;">
+								<div class="contact">
+									<h4></h4>
+									<p>Самарская область, г. Новокуйбышевск, ул. Горького, д. 43В</p>
+									<h4></h4>
+								</div>
+							</div>
+					</div>
+				</div>
                     {% endblock %}
-            </div>
-        </div>
+        	</div>
+		</div>
 <!-- RedConnect -->
 <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
 src="https://web.redhelper.ru/service/main.js?c=rai5690"></script>

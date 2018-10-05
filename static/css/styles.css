@@ -6135,36 +6135,52 @@ a {
 #heading {
   position: relative;
   display: table;
-  width: 100%;
-  height: 40px;
+  margin-left: -15px;
+  width: calc(100% + 30px);
+  height: 20px;
   color: black;
-  border-radius: 10px 10px 0px 0px;
-  background-color: #ffffff;
+  border-radius: 0;
+  background-color: #fff;
   border-style: solid;
-  border-width: 3px;
-  border-color: transparent;
+  border-width: 0 0 3px;
+  border-color: black;
+  margin-bottom: 10px;
+  text-align: center;
 }
+/*#heading:first-of-type {
+  border-radius: 10px 10px 0px 0px;
+  border-width: 0;
+}*/
 #heading h3 {
   position: relative;
   display: table-cell;
   vertical-align: middle;
   font-weight: 600;
   text-indent: 0;
-  padding: 0;
+  padding-bottom: 7px;
+  padding-left: 0px;
+  padding-top: 0;
   margin: 0;
-  padding-left: 12px;
+/*  padding-left: 12px; */
   color: black;
   background-color: #ffffff;
   font-size: 20px;
 }
-
+/*#line {
+  display: block;
+  position: relative;
+  color: black;
+  width: 100%;
+  height: 5px;
+}*/
 #content {
   display: block;
   max-width: 1400px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
   background-color: #ffffff;
   border-style: solid;
-  border-width: 3px 0 0 0;
+/*  border-width: 3px 0 0 0; */
+  border-width: 0;
   border-color: black transparent transparent transparent;
   margin: 0;
   padding: 15px;
@@ -6223,9 +6239,14 @@ a {
   transition: all 0.2s ease-in-out;
   display: inline-block;
   width: 100%;
+  height: 200px;
   margin-bottom: 10px;
 }
-
+@media (max-width: 767px) {
+#content .img-thumbnail {
+  width: 200px;  display: block; margin: 0 auto;
+}
+}
 #content .row {
   background-color: inherit;
   margin-top: 10px;
@@ -6277,9 +6298,9 @@ a {
 }
 #content .contact {
   color: black;
-  border-style: dotted;
+/*  border-style: dotted;
   border-width: 2px;
-  border-color: black;
+  border-color: black; */
   background: transparent;
   margin-bottom: 10px;
   padding: 5px;
@@ -6287,6 +6308,7 @@ a {
   width: 100%;
   min-width: 200px;
   background-color: transparent;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
 }
 
 #content .contact p {
@@ -6300,6 +6322,7 @@ a {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+/*
 @media (min-width: 200px) {
   #content .img-thumbnail {
     height: 90px;
@@ -6324,7 +6347,7 @@ a {
   #content .img-thumbnail {
     height: 200px;
   }
-}
+} */
 /*
 @media (min-width: 2000px) {
   #content .img-thumbnail {
@@ -6789,3 +6812,97 @@ span.total{
     line-height: 10px;
 }
 }
+
+
+@media (max-width: 950px) {
+.main-pic {
+display: inline-block; width: 40%;
+}
+}
+.main-pic {
+vertical-align: top;
+margin: 5px;
+margin-left: 0;
+display: inline-block; width: 150px; 
+}
+.contacts .main-pic {
+ vertical-align: middle;
+}
+.main-pic img {
+box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+.main-pic {
+display: inline-block; width: 90%; min-width: 150px;
+}
+}
+@media (max-width: 850px) {
+.main-pic {
+display: inline-block; width: 50%;
+}
+}
+@media (min-width: 850px) {
+.main-pic {
+display: inline-block; width: 25%; margin-right: -0.25em;
+}
+} 
+
+.pic-row {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.pic-row:after {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+    text-align: center;
+}
+}
+.contacts {
+position: relative; display: inline-block; /* width: 50%; float:left; margin-left: -15px; */
+}
+
+.map {
+position: relative; display: inline-block;
+}
+@media (max-width: 849px) {
+.contacts {
+width: calc(100% + 30px); margin-left: -15px;
+}
+.map {
+margin-left: 0; width: 100%;
+}
+}
+@media (min-width: 850px) {
+.contacts {
+width: 50%; float: left; margin-left: -15px;
+}
+.map {
+margin-left: 30px; width: calc(50% - 15px);
+}
+}
+comment-field {
+width: calc(100% - 170px);
+display: inline-block; 
+background-color: #FFF/*#E1E1E1 */;
+border-style: 0 solid;
+box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+border-radius: 5px;
+margin-left: 0px;
+margin-bottom: 15px;
+padding: 15px;
+}
+
+@media (max-width: 767px) {
+comment-field {
+display: block;
+width: 100%;
+}
+}
+
+
+

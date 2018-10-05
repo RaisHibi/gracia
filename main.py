@@ -48,5 +48,12 @@ def contacts():
 @app.route('/create')
 def create():
     return render_template('create.html')
+
+@app.route('/korp_meb')
+def korp_meb():
+    return render_template('korp_meb.html')
+@app.route('/myagk_meb')
+def myagk_meb():
+    return render_template('myagk_meb.html')
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    app.run(host='0.0.0.0', port=8000)

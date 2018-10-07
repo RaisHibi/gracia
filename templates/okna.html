@@ -1,9 +1,23 @@
 {% extends "main.html" %}
 {% block title %}Пластиковые окна{% endblock %}
+{% block head %} 
+<link href="/static/css/calc.css" rel="stylesheet">
+<script src="/static/js/lwc-design-user-css-sill-list.js"></script>
+<script src="/static/js/lwc-price-sill-list.js"></script>
+<script src="http://www.oknosoft.ru/lightcalc/js/lightcalc.js"></script>
+<script type="text/javascript" src="http://www.oknosoft.ru/lightcalc/js/lwc.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script src="http://www.oknosoft.ru/lightcalc/js/lightcalc.js"></script> 
+{% endblock %}
 <h3>{% block heading %}Пластиковые окна{% endblock %}</h3>
 {% block content %}
 <p>Мы занимаемся установкой оконных конструкций, остеклением балконов и лоджий, а также их
     отделкой. Компания "GRACIA" сотрудничает с производителями, проверенными временем. Используется сертифицированный
     оконный профиль ведущих европейских производителей "KBE", "EXPROF", "REHAU" и самая простая
     и надежная фурнитура фирмы "ROTO".</p>
+<div id="lwcdiv">
+
+</div>
 {% endblock %}
+

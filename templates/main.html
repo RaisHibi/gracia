@@ -25,7 +25,7 @@
 
         gtag('config', 'UA-120360401-1');  
     </script>
-
+    {% block head %}{% endblock %}
 </head>
 <body>
 <div class="wrapper">
@@ -216,19 +216,28 @@
 	    <li data-target="#carousel" data-slide-to="0" class="active"></li>
 	    <li data-target="#carousel" data-slide-to="1"></li>
 	    <li data-target="#carousel" data-slide-to="2"></li>
+	    <li data-target="#carousel" data-slide-to="3"></li>
+	    <li data-target="#carousel" data-slide-to="4"></li>
+	    <li data-target="#carousel" data-slide-to="5"></li>
 	  </ol>
 	  <div class="carousel-inner">
 	    <div class="item active">
-	      <img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/main/1.jpg" alt="...">
+	      <img src="/static/images/main/1.jpg" alt="...">
 	    </div>
 	    <div class="item">
-	      <a href="/okna"><img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/main/2.jpg" alt="..."></a>
+	      <img src="/static/images/main/2.jpg" alt="...">
 	    </div>
 	    <div class="item">
-	      <a href="/potolki"><img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/main/3.jpg" alt="..."></a>
+	      <a href="/okna"><img src="/static/images/main/2.jpg" alt="..."></a>
 	    </div>
 	    <div class="item">
-	      <img src="//s3.us-east-2.amazonaws.com/gracia-novo/static/images/main/4.jpg" alt="...">
+	      <a href="/okna"><img src="/static/images/main/4.jpg" alt="..."></a>
+	    </div>
+	    <div class="item">
+	      <a href="/potolki"><img src="/static/images/main/5.jpg" alt="..."></a>
+	    </div>
+	    <div class="item">
+	      <img href="/potolki" src="/static/images/main/6.jpg" alt="...">
 	    </div>
 	  </div>
 	  <!-- Элементы управления -->
@@ -379,6 +388,7 @@ src="https://web.redhelper.ru/service/main.js?c=rai5690"></script>
 href="http://redconnect.ru">Сервис обратного звонка RedConnect</a></div>
 <!--/RedConnect -->
     </div>
+
     <div class="push"></div>
     <div class="centered">
         <div class="footer">

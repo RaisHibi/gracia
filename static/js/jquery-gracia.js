@@ -114,7 +114,7 @@ $(document).ready(function() {
                 val = $(this).val();
                 if (!$.isNumeric(val)) {
                     switch (name) {
-                        case 'area':
+                        case 'length':
                             val = 1;
                             break;
                         case 'corners':
@@ -141,16 +141,16 @@ $(document).ready(function() {
  
             switch (calcInputs.texture) {
                 case 'mat':
-            total += calcInputs.area * 350;
+            total += calcInputs.length * 350;
             break;
                 case 'glossy':
-            total += calcInputs.area * 350;
+            total += calcInputs.length * 350;
             break;
                 case 'satin':
-            total += calcInputs.area * 350;
+            total += calcInputs.length * 350;
             break;
                 case 'fabric':
-            total += calcInputs.area * 400;
+            total += calcInputs.length * 400;
             break;
             default:
             break;
@@ -172,10 +172,128 @@ $(document).ready(function() {
                 total += calcInputs.tube * 200;
             }
  
-        install = calcInputs.area * 0;
+        install = calcInputs.length * 0;
         total += install;
 	    if (total < 4000) {
 	        total = 4000
+	    }
+ 
+            total += ' руб.';
+            jQuery(this).find('span.total').html(total);
+      });
+        }
+ 
+    });
+	
+(function ($) {
+  $(function () {
+ 
+        calculate();
+ 
+        jQuery('#calculator input').keyup(function() {
+            this.value = this.value.replace(/[^0-9\.,]/g, '');
+            this.value = this.value.replace(/[,]/, '.');
+        });
+        jQuery('#calculator input, #calculator select').change(function() {
+            calculate();
+        });
+        jQuery('#calculator input').keyup(function() {
+            calculate();
+        });
+        function calculate() {
+      $('.calculator_kitchen').each(function(key, val){
+        calcInputs = {};
+            $(this).find('input, select').each(function(key, val){
+                name = $(this).attr('name');
+                val = $(this).val();
+                if (!$.isNumeric(val)) {
+                    switch (name) {
+                        case 'length':
+                            val = 1;
+                            break;
+						case 'num_of_boxes':
+							val = 1
+							break;
+                        default:
+                            break;
+                    }
+                    $(this).val(val);
+                }
+                calcInputs[name] = val;
+            });
+ 
+            total = 0;
+ 
+            switch (calcInputs.fasad) {
+                case 'ldsp':
+            total += calcInputs.length * 1.5 * 1450;
+            break;
+                case 'mdf':
+            total += calcInputs.length * 1.5 * 2550;
+            break;
+                case 'pl':
+            total += calcInputs.length * 1.5 * 8000;
+            break;
+            default:
+            break;
+            }
+			
+            switch (calcInputs.type_kitch) {
+                case 'uglov':
+            total += 5000;
+            break;
+                case 'straight':
+            total += 0;
+            break;
+            default:
+            break;
+            } 
+
+            switch (calcInputs.stoleshn) {
+                case 'mat':
+            total += calcInputs.length * 1000;
+            break;
+                case 'gl':
+            total += calcInputs.length * 1200;
+            break;
+            default:
+            break;
+            }
+			
+            switch (calcInputs.wall_panel) {
+                case 'hdf':
+            total += calcInputs.length * 2100;
+            break;
+                case 'mat':
+            total += calcInputs.length * 1000;
+            break;
+                case 'gl':
+            total += calcInputs.length * 1200;
+            break;
+            default:
+            break;
+            }
+			
+            switch (calcInputs.box) {
+                case 'rolik':
+            total += 0;
+            break;
+                case 'polnov':
+            total += calcInputs.num_of_boxes * 300;
+            break;
+                case 'pvsh':
+            total += calcInputs.num_of_boxes * 1000;
+            break;
+				case 'tandem':
+            total += calcInputs.num_of_boxes * 3000;
+            break;
+            default:
+            break;
+            }
+        install = calcInputs.length * 0;
+        total += install;
+	    if (total < 14000) {
+	        total = 14000
 	    }
  
             total += ' руб.';

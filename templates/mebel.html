@@ -14,6 +14,81 @@
     На сайте представлены образцы мебели компаний "STOP-мебель", "KamiAl", "Stolprom",
     "Мастер", "Ренессанс", с которыми мы тесно сотрудничаем.
 </p>
+<div class="price" style="margin-top: 10px; background-color: #faf3e8;">
+  <div class="calc_title" style="color: red; font-size: 22px;">Расчет стоимости кухни</div>
+    <div id="calculator" class="calculator_kitchen">
+    <table>
+        <colgroup>
+            <col width="70%">
+            <col width="30%">
+        </colgroup>
+        <tbody>
+		<tr class="required">
+            <td>Тип кухни</td>
+            <td colspan="2">
+                <select name="type_kitch">
+                    <option value="uglov">Угловая кухня</option>
+                    <option value="straight">Прямая кухня</option>
+                </select>
+            </td>
+        </tr>
+	<tr class="required">
+            <td>Длина кухни</td>
+            <td><input name="length" value="1" type="text"></td>
+            <td>м</td>
+        </tr>
+        <tr class="required">
+            <td>Фасады</td>
+            <td colspan="1">
+                <select name="fasad">
+                    <option value="ldsp">ЛДСП</option>
+                    <option value="mdf">МДФ</option>
+                    <option value="pl">Пластик</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="required">
+            <td>Столешница</td>
+            <td colspan="1">
+                <select name="stoleshn">
+                    <option value="mat">Матовая</option>
+                    <option value="gl">Глянцевая</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="required">
+            <td>Стеновые панели</td>
+            <td colspan="3">
+                <select name="wall_panel">
+                    <option value="hdf">Фотопечать (ХДФ)</option>
+                    <option value="mat">Матовые</option>
+                    <option value="gl">Глянцевые</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="required">
+            <td>Выдвижные ящики</td>
+            <td colspan="2">
+                <select name="box">
+                    <option value="rolik">Роликовые</option>
+                    <option value="polnov">Полновыдвижные</option>
+                    <option value="pvsh">ПВШ с доводчиком</option>
+		    <option value="tandem">Тандембокс</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Общее количество ящиков</td>
+            <td><input name="num_of_boxes" value="1" type="text"></td>
+            <td>шт.</td>
+        </tr>		
+    </tbody></table>
+ 
+    <div class="total result">
+    Примерная стоимость: <span class="total">14000 руб.</span>
+    </div>
+    </div>
+</div>
 <p><i>
     Чтобы увеличить изображение, нажмите на него:
 </b></i>
